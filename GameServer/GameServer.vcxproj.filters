@@ -13,9 +13,6 @@
     <Filter Include="GameContents">
       <UniqueIdentifier>{9443c0ba-86af-43ef-a732-0d831bc9b04b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="DB">
-      <UniqueIdentifier>{731aea98-60e3-4f4c-ae8f-b417642fc063}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -41,9 +38,6 @@
     </ClCompile>
     <ClCompile Include="Enum.pb.cc">
       <Filter>Protocol</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>GameContents</Filter>
     </ClCompile>
     <ClCompile Include="Room.cpp">
       <Filter>GameContents</Filter>
@@ -74,17 +68,11 @@
     <ClInclude Include="Enum.pb.h">
       <Filter>Protocol</Filter>
     </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>GameContents</Filter>
-    </ClInclude>
     <ClInclude Include="Room.h">
       <Filter>GameContents</Filter>
     </ClInclude>
     <ClInclude Include="ServerGlobal.h">
       <Filter>Utils</Filter>
-    </ClInclude>
-    <ClInclude Include="GenProcedures.h">
-      <Filter>DB</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -100,13 +88,5 @@
     <None Include="..\Common\Protobuf\bin\GenPackets.bat">
       <Filter>Protocol</Filter>
     </None>
-    <None Include="..\Common\Procedures\GenProcs.bat">
-      <Filter>DB</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Xml Include="GameDB.xml">
-      <Filter>DB</Filter>
-    </Xml>
   </ItemGroup>
 </Project>

@@ -8,10 +8,9 @@ class Room : public JobQueue
 	friend class BroadCastJob;
 
 public:
-	void	Enter(PlayerRef player);
-	void	Leave(PlayerRef player);
+	
 	void	Broadcast(SendBufferRef sendBuffer);
 
-private:
-	Map<uint64, PlayerRef>	_players;
+public:
+	Vector<GameSessionRef>	_sessions;
 };

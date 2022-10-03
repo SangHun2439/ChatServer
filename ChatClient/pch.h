@@ -1,7 +1,6 @@
-#pragma once
-
-// ¿©±â¿¡ ¹Ì¸® ÄÄÆÄÀÏÇÏ·Á´Â Çì´õ Ãß°¡
-#define WIN32_LEAN_AND_MEAN // °ÅÀÇ »ç¿ëµÇÁö ¾Ê´Â ³»¿ëÀ» Windows Çì´õ¿¡¼­ Á¦¿ÜÇÕ´Ï´Ù.
+ï»¿#pragma once
+// ì—¬ê¸°ì— ë¯¸ë¦¬ ì»´íŒŒì¼í•˜ë ¤ëŠ” í—¤ë” ì¶”ê°€
+#include "framework.h"
 
 #ifdef _DEBUG
 #pragma comment(lib, "ServerCore\\Debug\\ServerCore.lib")
@@ -13,3 +12,4 @@
 
 #include "CorePch.h"
 
+using namespace std;

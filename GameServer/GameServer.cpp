@@ -38,13 +38,6 @@ char sendData[1000] = "Hello World";
 int main()
 {
 	ServerGlobal::Init();
-	
-	ASSERT_CRASH(GDBConnectionPool->Connect(1, L"Driver={ODBC Driver 17 for SQL Server};Server=(localdb)\\ProjectModels;Database=ServerDB;Trusted_Connection=Yes;"));
-
-	DBConnection* dbConn = GDBConnectionPool->Pop();
-	DBSynchronizer dbSync(*dbConn);
-	dbSync.Synchronize(L"GameDB.xml");
-
 	ClientPacketHandler::Init();
 	ServerServiceRef service = MakeShared<ServerService>(
 		NetAddress(L"127.0.0.1", 7777),
